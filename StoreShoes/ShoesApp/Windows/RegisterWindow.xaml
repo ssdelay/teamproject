@@ -1,0 +1,134 @@
+﻿<Window
+    x:Class="ShoesApp.Windows.RegisterWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:ShoesApp.Windows"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Окно регистрации"
+    Width="500"
+    Height="400"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d">
+    <Grid>
+        <TextBlock
+            Margin="34,39,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontFamily="Calibri"
+            FontSize="22"
+            Text="Имя" />
+        <TextBox
+            x:Name="NameTextBox"
+            Width="330"
+            Height="27"
+            Margin="150,39,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top" />
+
+        <TextBlock
+            Margin="34,80,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontFamily="Calibri"
+            FontSize="22"
+            Text="Логин" />
+        <TextBox
+            Name="LoginTextBox"
+            Width="330"
+            Height="27"
+            Margin="150,80,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top" />
+
+        <TextBlock
+            Margin="34,120,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontFamily="Calibri"
+            FontSize="22"
+            Text="Пароль" />
+        <PasswordBox
+            Name="PasswordBox"
+            Width="330"
+            Height="27"
+            Margin="150,120,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top" />
+
+        <TextBlock
+            Margin="34,160,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontFamily="Calibri"
+            FontSize="22"
+            Text="Повторно" />
+        <PasswordBox
+            Name="ConfirmPasswordBox"
+            Width="330"
+            Height="27"
+            Margin="150,160,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top" />
+
+        <TextBlock
+            Margin="34,200,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontFamily="Calibri"
+            FontSize="22"
+            Text="Почта" />
+        <TextBox
+            Name="EmailTextBox"
+            Width="330"
+            Height="27"
+            Margin="150,200,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top" />
+
+        <TextBlock
+            Margin="34,240,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontFamily="Calibri"
+            FontSize="22"
+            Text="Капча" />
+        <Image
+            Name="CaptchaImage"
+            Width="155"
+            Height="40"
+            Margin="150,240,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            OpacityMask="#00000000" />
+        <TextBox
+            Name="CaptchaTextBox"
+            Width="155"
+            Height="40"
+            Margin="325,240,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="26" />
+
+        <Button
+            Width="150"
+            Margin="260,298,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="White"
+            BorderBrush="#FFE4E4E4"
+            Click="RegisterButton_Click"
+            Content="Ок"
+            FontSize="18" />
+        <Button
+            Width="150"
+            Margin="100,298,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="White"
+            BorderBrush="#FFE4E4E4"
+            Click="LoginButton_Click"
+            Content="Отмена"
+            FontSize="18" />
+    </Grid>
+</Window>
